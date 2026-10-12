@@ -60,9 +60,9 @@ function initCountdown() {
   const countdownEl = document.getElementById("countdown");
   if (!countdownEl) return;
 
-  // Set target launch date (Example: 30 days from today)
+  // Set target launch date to exactly 2 years from today (730 days)
   const targetDate = new Date();
-  targetDate.setDate(targetDate.getDate() + 30);
+  targetDate.setDate(targetDate.getDate() + 730);
 
   function updateTimer() {
     const now = new Date().getTime();
